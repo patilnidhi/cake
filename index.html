@@ -150,7 +150,7 @@
         <div class="cut-piece" id="cutPiece"></div>
     </div>
     <div class="knife" id="knife"></div>
-    <button class="next-button" id="nextButton" onclick="nextStep()"><a href="https://patilnidhi.github.io/card/">Next →</a></button>
+    <button class="next-button" id="nextButton" onclick="nextStep()"><a href="">Next →</as></button>
     
     <script>
         let clickCount = 0;
@@ -166,7 +166,7 @@
 
         function blowCandles() {
             document.querySelectorAll('.flame').forEach(flame => flame.classList.add('hidden'));
-            document.getElementById('message').innerText = "Have a bite of the cake 🎂🔪";
+            document.getElementById('message').innerText = "Click to Cut the Cake 🎂🔪";
         }
 
         function cutCake() {
@@ -187,9 +187,9 @@
             }, 1000);
         }
 
-        // function nextStep() {
-        //     alert("Moving to the next surprise! 🎉");
-        // }
+        function nextStep() {
+            alert("Moving to the next surprise! 🎉");
+        }
     </script>
 </body>
 </html>
